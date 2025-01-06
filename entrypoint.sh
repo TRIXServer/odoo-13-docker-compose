@@ -111,6 +111,8 @@ if [ -n "$REQUIREMENTS_FILES" ]; then
   done
 fi
 
+pip3 install pyOpenSSL
+
 DB_ARGS=()
 function check_config() {
     param="$1"
