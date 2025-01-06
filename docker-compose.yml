@@ -7,6 +7,8 @@ services:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - POSTGRES_DB=postgres
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
     restart: always             # run as a service
     volumes:
         - ./postgresql:/var/lib/postgresql/data
@@ -26,6 +28,8 @@ services:
       - HOST=db
       - USER=odoo
       - PASSWORD=odoo
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
     volumes:
       #- /etc/timezone:/etc/timezone:ro
       #- /etc/localtime:/etc/localtime:ro
